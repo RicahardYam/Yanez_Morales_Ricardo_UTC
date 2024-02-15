@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between; /* Espacio entre los elementos */
+}
+
+header {
+  background-image: url('utc.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 80px 0; /* Ajusta el espacio según sea necesario */
+  text-align: center;
+}
+
+header h1 {
+  margin-top: 0;
+}
+
+.parcial {
+  flex: 1; /* Cada parcial toma el mismo espacio */
+  text-align: center;
+  border-right: 1px solid #ccc; /* Línea divisoria entre los parciales */
+  padding-right: 20px; /* Espacio interno */
+}
+
+.parcial:last-child {
+  border-right: none; /* Elimina la línea divisoria del último parcial */
+}
+
+.practices {
+  text-align: left; /* Alinea los enlaces a la izquierda */
+}
+
+.practices a {
+  display: block; /* Convierte los enlaces en bloques para estar en vertical */
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #000056;
+  padding: 10px 20px;
+  margin: 10px 0; /* Espacio entre los enlaces */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.practices a:hover {
+  background-color: #ff4e00;
+}

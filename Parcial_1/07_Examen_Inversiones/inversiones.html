@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Inversión</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-background"></div>
+        <div class="header-content">
+            <h1>Bienvenido a nuestra plataforma de inversión</h1>
+            <p>¡Invertir es una gran manera de hacer crecer tu dinero y alcanzar tus metas financieras!</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="left-section">
+            <h2>Ingrese los datos de su inversión:</h2>
+            <div class="input-panel">
+                <div class="input-box">
+                    <div class="input-wrapper">
+                        <i class="fas fa-money-bill"></i>
+                        <label for="amount">Cantidad a invertir:</label>
+                    </div>
+                    <input type="text" id="amount" required>
+                </div>
+            </div>
+            <div class="input-panel">
+                <div class="input-wrapper">
+                    <i class="far fa-clock"></i>
+                    <label for="time">Tiempo de inversión:</label>
+                </div>
+                <select id="time" required>
+                    <option value="30">1 mes</option>
+                    <option value="60">2 meses</option>
+                    <option value="90">3 meses</option>
+                    <option value="120">4 meses</option>
+                    <option value="150">5 meses</option>
+                    <option value="180">6 meses</option>
+                    <option value="210">7 meses</option>
+                    <option value="240">8 meses</option>
+                    <option value="270">9 meses</option>
+                    <option value="300">10 meses</option>
+                    <option value="330">11 meses</option>
+                    <option value="365">12 meses</option>
+                    <option value="730">2 años</option>
+                    <option value="1095">3 años</option>
+                </select>
+            </div>
+            <div class="input-panel">
+                <div class="input-wrapper">
+                    <i class="fas fa-percentage"></i>
+                    <label for="interest">Tasa anual de rendimiento:</label>
+                </div>
+                <select id="interest" required>
+                    <option value="1">1%</option>
+                    <option value="5">5%</option>
+                    <option value="10">10%</option>
+                    <option value="15">15%</option>
+                    <option value="20">20%</option>
+                    <option value="25">25%</option>
+                    <option value="30">30%</option>
+                    <option value="35">35%</option>
+                    <option value="40">40%</option>
+                    <option value="45">45%</option>
+                    <option value="50">50%</option>
+                    <option value="55">55%</option>
+                    <option value="60">60%</option>
+                    <option value="65">65%</option>
+                    <option value="70">70%</option>
+                    <option value="75">75%</option>
+                    <option value="80">80%</option>
+                    <option value="85">85%</option>
+                    <option value="90">90%</option>
+                    <option value="95">95%</option>
+                    <option value="99">99%</option>
+                </select>
+            </div>
+            <button id="calculate-button">Calcular</button>
+            <div><button class="button" onclick="window.location.href='../../index.html'">Ventana Principal</button>
+            </div>
+            
+
+        </div>
+        <div class="right-section">
+            <p>El rendimiento de su inversión es la cantidad que ganará diariamente según los datos ingresados.</p>
+            <div id="result"></div>
+            
+            <table id="investment-table" class="styled-table"></table>
+            
+            <button id="print-button" class="print-button">Imprimir</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+    <script>
+        document.getElementById('calculate-button').addEventListener('click', function() {
+            // Obtener el valor del campo de cantidad a invertir
+            const amountInput = document.getElementById('amount').value;
+            const timeInput = document.getElementById('time').value;
+            const interestInput = document.getElementById('interest').value;
+            
+            // Convertir las cantidades ingresadas a números
+            const amount = parseFloat(amountInput);
+            const time = parseInt(timeInput);
+            const interest = parseInt(interestInput);
+            
+            // Validar si la cantidad es un número válido y positivo
+            if (isNaN(amount) || amount <= 0) {
+                alert('Por favor, ingrese una cantidad válida y positiva.');
+                return;
+            }
+
+            // Continuar con el resto de la lógica de cálculo
+            // ...
+        });
+    </script>
+</body>
+</html>

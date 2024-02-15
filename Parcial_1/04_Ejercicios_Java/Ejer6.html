@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Edad</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: cyan;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .text {
+            text-align: center;
+            color: #31B189;
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .form {
+            background-color: black;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        table td {
+            padding: 10px;
+        }
+
+        input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+            background-color: black;
+            color: cyan;
+            border: 2px solid #31B189;
+            border-radius: 5px;
+        }
+
+        input[type="button"] {
+            background-color: black;
+            color: cyan;
+            padding: 10px 15px;
+            border: 2px solid #31B189;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="button"]:hover {
+            background-color: #31B189;
+            color: black;
+        }
+
+        hr {
+            border: 1px solid #FFE3B3;
+            margin: 20px 0;
+        }
+
+        button a {
+            text-decoration: none;
+            color: white;
+        }
+
+        button {
+            background-color: #31B189;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #FFC872;
+        }
+    </style>
+    <script src="./js/ejercicios.js"></script>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="text">
+            <p>Formulario para calcular la edad de una persona</p>
+        </div>
+        <div class="form">
+            <form method="post" name="formulario">
+                <div class="table-content">
+                    <table>
+                        <tr>
+                            <td>Ingrese el año de nacimiento:</td>
+                            <td><input type="date" name="año" onkeypress="return validar(event)"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="button" value="Calcular edad" name="enviar" onclick="edad()"></td>
+                        </tr>
+                        <tr>
+                            <td>Tu edad es:</td>
+                            <td><input type="text" readonly="readonly" name="sueldoI" id="cantidadI"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="button" value="Borrar Datos" name="borrar" onclick="borrarDatosEjercicio6()"></td>
+                        </tr>
+                    </table>
+                </div>
+            </form>
+            <hr>
+            <div class="">
+                <button><a href="../../index.html">Ventana Principal</a></button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

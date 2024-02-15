@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Utilidades</title>
+    <script src="10_algoritmos.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFDAB9;
+            color: #31B189;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #31B189;
+            margin-top: 20px;
+        }
+
+        label {
+            font-size: 21px;
+            display: block;
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #7ACE67;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #FFC872;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora de Utilidades</h1>
+    
+    <label for="antiguedad">Antigüedad en años:</label>
+    <input type="text" id="antiguedad" placeholder="Ingrese la antigüedad en años">
+
+    <br>
+    
+    <label for="salarioMensual">Salario Mensual:</label>
+    <input type="text" id="salarioMensual" placeholder="Ingrese el salario mensual">
+
+    <br>
+
+    <button onclick="tarea10()">Calcular Utilidad</button>
+    <button class="button" onclick="window.location.href='../../index.html'">Ventana Principal</button>
+</body>
+</html>

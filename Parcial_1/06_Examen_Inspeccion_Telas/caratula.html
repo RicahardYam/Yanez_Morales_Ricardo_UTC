@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carátula</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+  </style>
+</head>
+
+<body>
+  <header style="text-align: center">
+    <div class="button" style=" background-image: url('logoEncabezado.jpg')">
+      <h1>Bienvenido a TEXTILASEGURA</h1>
+      <h4>!Tú seguridad en cada hilo¡</h4>
+    </div>
+  </header>
+  <div class="container">
+    <div class="left-panel">
+      <div class="checkbox-container">
+        <h3>Tipo de inspección:</h3>
+        <div class="checkbox-container">
+          <input type="checkbox" id="empaque" name="empaque" value="Empaque">
+          <label for="empaque">Empaque</label>
+        </div>
+        <div class="checkbox-container">
+          <input type="checkbox" id="medidas" name="medidas" value="Medidas">
+          <label for="medidas">Medidas</label>
+        </div>
+        <div class="checkbox-container">
+          <input type="checkbox" id="visual" name="visual" value="Visual">
+          <label for="visual">Visual</label>
+        </div>
+        <div class="checkbox-container">
+          <input type="checkbox" id="etiquetado" name="etiquetado" value="Etiquetado">
+          <label for="etiquetado">Etiquetado</label>
+        </div>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h2>INFORME DE INSPECCIÓN</h2>
+      <div class="section">
+        <div class="input-container">
+          <label for="proveedor">Proveedor:</label>
+          <select id="proveedores" name="proveedores">
+            <option value="Textiles Hernandez">Textiles Hernández</option>
+            <option value="Telas Martínez">Telas Martínez</option>
+            <option value="Tejidos Sánchez">Tejidos Sánchez</option>
+            <option value="TelaFácil">TelaFácil</option>
+            <option value="Telas y Más">Telas y Más</option>
+            <option value="Textiles Rojas">Textiles Rojas</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <label for="descripcion">*Descripción de la prenda:</label>
+          <input type="text" id="descripcion" name="descripcion">
+        </div>
+        <div class="input-container">
+          <label for="contenido_fibra">Contenido de Fibra:</label>
+          <select id="contenido_fibra" name="contenido_fibra">
+            <option value="Algodón">Algodón</option>
+            <option value="Poliéster">Poliéster</option>
+            <option value="Nylon">Nylon</option>
+            <option value="Lana">Lana</option>
+            <option value="Seda">Seda</option>
+            <option value="Algodón + Poliéster">Algodón + Poliéster</option>
+            <option value="Algodón + Nylon">Algodón + Nylon</option>
+            <option value="Algodón + Lana">Algodón + Lana</option>
+            <option value="Algodón + Seda">Algodón + Seda</option>
+            <option value="Poliéster + Nylon">Poliéster + Nylon</option>
+            <option value="Poliéster + Lana">Poliéster + Lana</option>
+            <option value="Poliéster + Seda">Poliéster + Seda</option>
+            <option value="Nylon + Lana">Nylon + Lana</option>
+            <option value="Nylon + Seda">Nylon + Seda</option>
+            <option value="Lana + Seda">Lana + Seda</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <label for="modelo">*Modelo:</label>
+          <input type="text" id="modelo" name="modelo">
+        </div>
+        <div class="input-container">
+          <label for="colores">Colores:</label>
+          <select id="colores" name="colores">
+            <option value="Negro">Negro</option>
+            <option value="Blanco">Blanco</option>
+            <option value="Azul">Azul</option>
+            <option value="Rojo">Rojo</option>
+            <option value="Verde">Verde</option>
+            <option value="Gris">Gris</option>
+            <option value="Marrón">Marrón</option>
+            <option value="Amarillo">Amarillo</option>
+            <option value="Naranja">Naranja</option>
+            <option value="Rosa">Rosa</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <label for="tallas">Tallas seleccionadas:</label>
+          <select id="tallas" name="tallas">
+            <option value="CH">CH</option>
+            <option value="M">M</option>
+            <option value="G">G</option>
+            <option value="XL">XL</option>
+            <option value="CH, M">CH,M</option>
+            <option value="CH, G">CH,G</option>
+            <option value="CH, XL">CH,XL</option>
+            <option value="M, G">M,G</option>
+            <option value="M, XL">M,XL</option>
+            <option value="G, XL">G,XL</option>
+            <option value="CH, M, G">CH,M,G</option>
+            <option value="CH, M, XL">CH,M,XL</option>
+            <option value="CH, G, XL">CH,G,XL</option>
+            <option value="M, G, XL">M,G,XL</option>
+            <option value="CH, M, G, XL">CH,M,G,XL</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <label for="fecha">Fecha de Inspección:</label>
+          <input type="date" id="fecha" name="fecha">
+        </div>
+        <div class="input-container">
+          <label for="numero_reporte">*Número de reporte: </label>
+          <input type="text" id="numero_reporte" name="numero_reporte">
+        </div>
+        <div class="input-container">
+          <label for="marca">*Marca:</label>
+          <input type="text" id="marca" name="marca">
+        </div>
+        <div class="input-container">
+          <label for="departamento">*Departamento:</label>
+          <input type="text" id="departamento" name="departamento">
+        </div>
+      </div>
+      <div id="empaque-d">
+
+
+        <h2 id="seleccion-empaque">INSPECCIÓN DE EMPAQUE</h2>
+        <div class="section">
+          <div class="input-container">
+            <label for="total-cajas">*Total de cajas:</label>
+            <input type="number" id="total-cajas-empaque" name="total-cajas" value="1">
+          </div>
+          <div class="input-container">
+            <label for="muestreo-cajas">*Muestreo de Cajas:</label>
+            <input type="number" id="muestreo-cajas-empaque" name="muestreo-cajas" value="1">
+          </div>
+          <div class="button-container">
+            <button class="button" onclick="generarTabla()">Generar tabla</button>
+          </div>
+        </div>
+
+        <table id="empaque-table">
+          <thead>
+            <tr>
+              <th>Código</th>
+              <th>Defecto</th>
+              <th>Número de caja</th>
+              <th>Total de Defecticvos</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+        <div class="section">
+          <div class="input-container">
+            <label for="critico">Crítico:</label>
+            <select id="critico" name="critico">
+              <option value="Sin"></option>
+              <option value="AQL/AC">AQL/AC</option>
+              <option value="AQL/RE">AQL/RE</option>
+            </select>
+          </div>
+          <div class="input-container">
+            <label for="mayor">Mayor:</label>
+            <select id="mayor" name="mayor">
+              <option value="Sin"></option>
+              <option value="AQL/AC">AQL/AC</option>
+              <option value="AQL/RE">AQL/RE</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-container">
+          <p for="aceptado-etiquetado">*Aceptado:
+          <input type="radio" id="aceptado-etiquetado" name="aceptado-etiquetado">
+          <p for="rechazo-etiquetado">*Rechazo:
+          <input type="radio" id="aceptado-etiquetado" name="aceptado-etiquetado">
+        </div>
+      </div>
+      <hr>
+      <div id="etiquetado-d">
+
+        <h2 id="seleccion-etiquetado">INSPECCIÓN DE ETIQUETADO</h2>
+        <div class="section">
+          <div class="input-container">
+            <label for="total-prendas">Total de prendas:</label>
+            <input type="number" id="total-prendas-etiquetado" name="total-prendas" value="1">
+          </div>
+          <div class="input-container">
+            <label for="muestreo-prendas">Muestreo de prendas:</label>
+            <input type="number" id="muestreo-prendas-etiquetado" name="muestreo-prendas" value="1">
+          </div>
+          <div class="button-container">
+            <button class="button" onclick="generarTabla2()">Generar tabla</button>
+          </div>
+        </div>
+        <table id="etiquetado-table">
+          <thead>
+            <tr>
+              <th>Código</th>
+              <th>Defecto</th>
+              <th>Número de prenda</th>
+              <th>Total de Defectivos</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+        <div class="section">
+          <div class="input-container">
+            <label for="critico-etiquetado">Crítico:</label>
+            <select id="critico-etiquetado" name="critico-etiquetado">
+              <option value="Sin"></option>
+              <option value="AQL/AC">AQL/AC</option>
+              <option value="AQL/RE">AQL/RE</option>
+            </select>
+          </div>
+          <div class="input-container">
+            <label for="mayor-etiquetado">Mayor:</label>
+            <select id="mayor-etiquetado" name="mayor-etiquetado">
+              <option value="Sin"></option>
+              <option value="AQL/AC">AQL/AC</option>
+              <option value="AQL/RE">AQL/RE</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-container">
+          <p for="aceptado-etiquetado">*Aceptado:
+          <input type="radio" id="aceptado-etiquetado" name="aceptado-etiquetado">
+          <p for="rechazo-etiquetado">*Rechazo:
+          <input type="radio" id="aceptado-etiquetado" name="aceptado-etiquetado">
+        </div>
+        
+
+      </div>
+      <hr>
+      <!-- <div class="container"> -->
+      <!-- <div class="left-panel">
+          <div class="checkbox-container">
+            <div class="checkbox-container">
+            </div>
+            <div class="checkbox-container">
+            </div>
+            <div class="checkbox-container">
+            </div>
+            <div class="checkbox-container">
+            </div>
+          </div>
+        </div> -->
+      <div class="right-panel" id="medidas-d">
+        <h2>INSPECCIÓN DE MEDIDAS</h2>
+        <div class="section">
+          <div class="input-container">
+            <label for="modeloM">Modelo:</label>
+            <input type="text" id="modeloM" name="modeloM" disabled>
+          </div>
+          <div class="input-container">
+            <label for="numero_reporteM">Número de reporte:</label>
+            <input type="text" id="numero_reporteM" name="numero_reporteM" disabled>
+          </div>
+          <div class="input-container">
+            <label for="fecha_inspeccion">Fecha de inspección:</label>
+            <input type="date" id="fecha_inspeccion" name="fecha_inspeccion">
+          </div>
+          <div class="input-container">
+            <label for="muestreo_prendasM">Muestreo de prendas:</label>
+            <input type="number" id="muestreo_prendasM" name="muestreo_prendasM">
+          </div>
+          <div class="button-container">
+            <button class="button" onclick="generarTabla3()">Generar tabla</button>
+          </div>
+        </div>
+          <table id="etiquetado-tableM">
+            <thead>
+              <tr>
+                <th colspan="1">Puntos a Medir</th>
+                <th colspan="2">Ficha Técnica</th>
+                <th colspan="10">No. Prenda / Colores</th>
+                <th rowspan="1">Total de Prendas</th>
+              </tr>
+            </thead>
+            <thead>
+              <tr>
+                <th colspan="1"></th>
+                <th colpan="1">STD</th>
+                <th colpan="1">TOL</th>
+                <th colpan="1">Negro</th>
+                <th colpan="1">Blanco</th>
+                <th colpan="1">Azul</th>
+                <th colpan="1">Rojo</th>
+                <th colpan="1">Verde</th>
+                <th colpan="1">Gris</th>
+                <th colpan="1">Marrón</th>
+                <th colpan="1">Amarillo</th>
+                <th colpan="1">Naranja</th>
+                <th colpan="1">Rosa</th>
+                <th rowspan="1"></th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+
+          <div class="input-container">
+            <label for="mayor">Mayor:</label>
+            <input type="text" id="mayor" name="mayor">
+          </div>
+          <div class="input-container">
+            <p for="aceptado-etiquetado">*Aceptado:
+            <input type="radio" id="aceptado-etiquetado" name="aceptado-etiquetado">
+            <p for="rechazo-etiquetado">*Rechazo:
+            <input type="radio" id="aceptado-etiquetado" name="aceptado-etiquetado">
+          </div>
+        
+
+
+        
+
+      </div>
+      <hr>
+      <div id="visual-d">
+        <!-- <div class="left-panel">
+            <div class="checkbox-container">
+              <div class="checkbox-container">
+              </div>
+              <div class="checkbox-container">
+              </div>
+              <div class="checkbox-container">
+              </div>
+              <div class="checkbox-container">
+              </div>
+            </div>
+          </div>  -->
+        <div class="right-panel">
+          <h2>INSPECCIÓN VISUAL</h2>
+          <div class="section">
+            <div class="input-container">
+              <label for="modelo">Modelo:</label>
+              <input type="text" id="modeloV" name="modeloV" disabled>
+            </div>
+            <div class="input-container">
+              <label for="numero_reporteV">Número de reporte:</label>
+              <input type="text" id="numero_reporteV" name="numero_reporteV" disabled>
+            </div>
+            <div class="input-container">
+              <label for="fecha_inspeccion">Fecha de inspección:</label>
+              <input type="date" id="fecha_inspeccion" name="fecha_inspeccion">
+            </div>
+            <div class="input-container">
+              <label for="muestreo_prendasV">Muestreo de prendas:</label>
+              <input type="number" id="muestreo_prendasV" name="muestreo_prendasV">
+            </div>
+            <div class="button-container">
+              <button class="button" onclick="generarTabla4()">Generar tabla</button>
+            </div>
+          </div>
+            <table id="etiquetado-tableV">
+              <thead>
+                <tr>
+                  <th colspan="1">Puntos a Medir</th>
+                  <th colspan="2">Ficha Técnica</th>
+                  <th colspan="10">No. Prenda / Colores</th>
+                  <th rowspan="1">Total de Prendas</th>
+                </tr>
+              </thead>
+              <thead>
+                <tr>
+                  <th colspan="1"></th>
+                  <th colpan="1">STD</th>
+                  <th colpan="1">TOL</th>
+                  <th colpan="1">Negro</th>
+                  <th colpan="1">Blanco</th>
+                  <th colpan="1">Azul</th>
+                  <th colpan="1">Rojo</th>
+                  <th colpan="1">Verde</th>
+                  <th colpan="1">Gris</th>
+                  <th colpan="1">Marrón</th>
+                  <th colpan="1">Amarillo</th>
+                  <th colpan="1">Naranja</th>
+                  <th colpan="1">Rosa</th>
+                  <th rowspan="1"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td>Total de Defectivos</td>
+
+                  <td><input type="number" id="numero" name="prenda1" min="0" max="1000"></td>
+                  <td><input type="number" id="numero" name="prenda2" min="0" max="1000"></td>
+                  <td><input type="number" id="numero" name="prenda3" min="0" max="1000"></td>
+                  <td><input type="number" id="numero" name="prenda4" min="0" max="1000"></td>
+                  <td><input type="number" id="numero" name="prenda5" min="0" max="1000"></td>
+                  <td><input type="number" id="numero" name="prenda6" min="0" max="1000"></td>
+                  <td><input type="number" id="numero" name="prenda7" min="0" max="1000"></td>
+                  <td><input type="number" id="numero" name="prenda8" min="0" max="1000"></td>
+                  <td><input type="number" id="numero" name="prenda9" min="0" max="1000"></td>
+                  <td><input type="number" id="numero" name="prenda10" min="0" max="1000"></td>
+                  <td><input type="number" id="numero" name="total1" min="0" max="1000"></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>Total de Prendas con Defectivos</td>
+
+                  <td><input type="number" id="numero" name="prenda1" min="0" max="1000"></td>
+                  <td><input type="number" id="numero" name="prenda2" min="0" max="1000"></td>
+                  <td><input type="number" id="numero" name="prenda3" min="0" max="1000"></td>
+                  <td><input type="number" id="numero" name="prenda4" min="0" max="1000"></td>
+                  <td><input type="number" id="numero" name="prenda5" min="0" max="1000"></td>
+                  <td><input type="number" id="numero" name="prenda6" min="0" max="1000"></td>
+                  <td><input type="number" id="numero" name="prenda7" min="0" max="1000"></td>
+                  <td><input type="number" id="numero" name="prenda8" min="0" max="1000"></td>
+                  <td><input type="number" id="numero" name="prenda9" min="0" max="1000"></td>
+                  <td><input type="number" id="numero" name="prenda10" min="0" max="1000"></td>
+                  <td><input type="number" id="numero" name="total1" min="0" max="1000"></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="section">
+              <div class="input-container">
+                <label for="critico">Crítico:</label>
+                <input type="text" id="critico" name="critico">
+              </div>
+
+              <div class="input-container">
+                <label for="mayor">Mayor:</label>
+                <input type="text" id="mayor" name="mayor">
+              </div>
+            </div>
+            <div class="input-container">
+              <p for="aceptado-etiquetado">*Aceptado:
+              <input type="radio" id="aceptado-etiquetado" name="aceptado-etiquetado">
+              <p for="rechazo-etiquetado">*Rechazo:
+              <input type="radio" id="aceptado-etiquetado" name="aceptado-etiquetado">
+            </div>
+          
+        </div>
+      </div>
+      <hr>
+      <h2 id="seleccion-empaque">ESTATUS FINAL</h2>
+        <div class="section">
+          <div class="input-container">
+            <p for="aceptado-etiquetado">*Aceptado:
+            <input type="radio" id="aceptado-etiquetado" name="aceptado-etiquetado">
+            <p for="rechazo-etiquetado">*Rechazo:
+            <input type="radio" id="aceptado-etiquetado" name="aceptado-etiquetado">
+          </div>
+          
+        </div>
+      <!-- <div class="section"> -->
+        <div class="input-container">
+          <label for="firma_proveedor">FIRMA DEL PROVEEDOR____________________________________:</label>
+        </div>
+        <div class="input-container">
+          <label for="firma_inspector">FIRMA DEL INSPECTOR_________________________________:</label>
+        </div>
+      <!-- </div> -->
+      <div class="button-container">
+        <a href="inicio.html"><button class="button">Volver a la página principal</button></a>
+        <button class="button" onclick="window.print()">Imprimir Documento</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
