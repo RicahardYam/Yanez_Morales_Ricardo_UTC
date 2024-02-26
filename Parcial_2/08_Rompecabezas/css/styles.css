@@ -58,7 +58,7 @@ header {
 }
 
 
-#iniciarButton, #verinstrucciones {
+#iniciarButton, #verinstrucciones, #menuprincipal {
     margin: 10px auto;
     width: 50%;
     font-size: 18px;
@@ -80,7 +80,7 @@ header {
     text-decoration: none;
 }
 
-#iniciarButton:hover, #verinstrucciones:hover {
+#iniciarButton:hover, #verinstrucciones:hover, #menuprincipal:hover{
     background-image: #f3e6ec;
     background: #2079b0;
     background-image: -webkit-linear-gradient(top, #09bbe7, #eba0ee);

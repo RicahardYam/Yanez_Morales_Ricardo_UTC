@@ -231,6 +231,9 @@ function verinstrucciones(){
     mostrarInstrucciones(instrucciones);
 }
 
+function menuprincipal(){
+    window.location.href ="../../index.html"
+}
 //ejecutamos las funciones
 // iniciar();
 // mostrarInstrucciones(instrucciones);
