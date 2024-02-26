@@ -68,7 +68,7 @@ function checarSiGano(){
 //funcion para mostrar que gane
 function mostrarCartelGanador(){
     if(checarSiGano()){
-        alert("Felicidades, Ganaste!!!. Te mereces una Kawasaki <3");
+        alert("Eso estuvo muy facil");
     }
     return false;
 }
